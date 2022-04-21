@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .v-header {
-  position: relative;
+  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
   height: 80px;
   display: flex;
   align-items: center;
