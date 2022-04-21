@@ -36,11 +36,16 @@ export default {
   &__user-panel {
     display: flex;
     align-items: center;
+    transition: 0.6s;
     &__icon {
       width: 30px;
       height: 30px;
       padding: 0 10px 0 0;
     }
+  }
+  &__admin-panel:hover,
+  &__user-panel:hover {
+    color: #fff;
   }
 }
 a {
