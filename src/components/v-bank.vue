@@ -118,7 +118,7 @@ export default {
     return {};
   },
   methods: {
-    ...mapMutations(["DELETE_BANK"]),
+    ...mapMutations(["DELETE_BANK", "BANKS"]),
     switchModeTitle() {
       this.bankData.isTitleChanged = !this.bankData.isTitleChanged;
       localStorage.setItem("bank", this.bankData.id);
@@ -175,9 +175,6 @@ export default {
       return value;
     },
   },
-  computed: {
-    checkP() {},
-  },
 };
 </script>
 
@@ -220,6 +217,10 @@ export default {
     border: none;
     padding: 5px;
     float: right;
+    transition: 0.4s;
+  }
+  &__btn:hover {
+    color: #eee;
   }
   &__form-field {
     border: 1px solid green;
@@ -229,6 +230,7 @@ export default {
 }
 .btn-delete {
   background-color: #b30b00;
+  transition: 0.4s;
 }
 .btn-delete:hover {
   background-color: maroon;

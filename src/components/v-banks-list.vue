@@ -7,6 +7,7 @@
       </button>
       <h1>Banks</h1>
       <v-bank v-for="(bank, i) in banks" :id="`bank${i + 1}`" :key="i" :bankData="bank"></v-bank>
+      <p v-if="!this.banks.length">Thera are no banks ...</p>
     </div>
   </div>
 </template>
