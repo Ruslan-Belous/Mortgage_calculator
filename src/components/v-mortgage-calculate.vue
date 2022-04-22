@@ -28,10 +28,10 @@
 
       <div class="inputs-section__capable">
         <div v-if="chosenBank.id && checkCapable">
-          <p>the bank is capable of giving a requested loan</p>
+          <p>The bank is capable of giving a requested loan</p>
           <button class="inputs-section__btn-save" @click="saveSettings">Calculate</button>
         </div>
-        <p v-else>the bank is not capable of giving a requested loan</p>
+        <p v-else>The bank is not capable of giving a requested loan</p>
       </div>
     </div>
     <v-result-section :isShown="isResultShown" />
