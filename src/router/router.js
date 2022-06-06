@@ -11,9 +11,7 @@ let router = new Router({
     routes: [
         {
             path: '/',
-            name: 'header',
-            component: vBanksList,
-            props: true
+            redirect: 'banks'
         },
         {
             path: '/banks',
