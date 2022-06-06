@@ -7,10 +7,10 @@ import vMortgageCalculate from '../components/v-mortgage-calculate'
 Vue.use(Router)
 
 let router = new Router({
-    // mode: "history",
+    mode: "history",
     routes: [
         {
-            path: '',
+            path: '/',
             name: 'header',
             component: vBanksList,
             props: true
